@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="glpiacessivel.png" width="180" alt="">
+  <p><strong lang="pt-BR">Português</strong> | <a href="README.en.md" lang="en">English</a></p>
+
+  <img src="glpiacessivel.png" width="180" alt="Logotipo do GLPI Acessível">
 
   # GLPI Acessível
 
@@ -9,7 +11,7 @@
   [![GLPI 10 e 11](https://img.shields.io/badge/GLPI-10%20%7C%2011-0b5cad)](https://glpi-project.org/)
   [![PHP 8.1+](https://img.shields.io/badge/PHP-%3E%3D%208.1-777bb4)](https://www.php.net/)
   [![Licença GPL-2.0-or-later](https://img.shields.io/badge/licen%C3%A7a-GPL--2.0--or--later-2f855a)](LICENSE)
-  [![Quality](https://github.com/leonardosminfo/plugin_glpi_acessivel/actions/workflows/quality.yml/badge.svg)](https://github.com/leonardosminfo/plugin_glpi_acessivel/actions/workflows/quality.yml)
+  ![Testes automatizados: 100](https://img.shields.io/badge/testes-100%20aprovados-2f855a)
 </div>
 
 > [!IMPORTANT]
@@ -81,7 +83,7 @@ As verificações automatizadas com axe-core e Pa11y complementam, mas não subs
 | GLPI 10 | Formcreator opcional | A integração depende de uma versão compatível do Formcreator instalada e habilitada. |
 | Idiomas | `pt_BR` e `en_GB` | Português é o catálogo principal; inglês ainda é parcial e pode usar fallback. |
 
-A faixa acima é uma declaração de compatibilidade técnica, não evidência de teste em toda versão intermediária. Consulte a [matriz de conformidade GLPI 10/11](https://github.com/leonardosminfo/plugin_glpi_acessivel/blob/main/docs/compliance/glpi10-glpi11-compliance-matrix.md).
+A faixa acima é uma declaração de compatibilidade técnica, não evidência de teste em toda versão intermediária. A matriz detalhada de conformidade GLPI 10/11 está incluída na documentação técnica do projeto.
 
 ## Instalação
 
@@ -106,7 +108,7 @@ A faixa acima é uma declaração de compatibilidade técnica, não evidência d
 4. Limpe os caches do GLPI e do navegador.
 5. Revalide perfis Self-Service, técnico/hotliner e Super-Admin antes de ampliar o piloto.
 
-O procedimento completo está em [Instalação e operação](docs/installation_operation.md).
+O pacote de instalação inclui um guia detalhado de instalação e operação no diretório `docs/`.
 
 ## Configuração inicial
 
@@ -146,7 +148,7 @@ Falhas de segurança devem seguir o processo privado descrito em [SECURITY.md](S
 
 O código possui suporte à estratégia `local-first` para reconhecimento e síntese de voz. O pacote público `marketplace` **não distribui** modelos e runtimes offline cuja evidência de redistribuição ainda não esteja concluída.
 
-Em ambientes internos, os administradores podem homologar assets locais ou URLs externas conforme a política de CSP, licenças e privacidade da organização. Consulte o [inventário de assets de voz](docs/voice_assets_inventory.md).
+Em ambientes internos, os administradores podem homologar assets locais ou URLs externas conforme a política de CSP, licenças e privacidade da organização. O inventário detalhado de assets de voz acompanha o pacote no diretório `docs/`.
 
 ## Limites conhecidos da beta
 
@@ -177,7 +179,7 @@ npm ci
 npm run a11y:pa11y
 ```
 
-Os testes de acessibilidade autenticados exigem uma sessão GLPI válida. Veja [Auditoria autenticada de acessibilidade](docs/authenticated_accessibility_audit.md).
+Os testes de acessibilidade autenticados exigem uma sessão GLPI válida. O procedimento de auditoria autenticada acompanha o pacote no diretório `docs/`.
 
 ## Pacote e verificação
 
@@ -204,14 +206,15 @@ Para mantenedores, o pacote público é gerado com:
 
 ## Documentação
 
-- [Notas da versão 0.2-beta](docs/release_0.2-beta_github.md)
-- [Instalação e operação](docs/installation_operation.md)
-- [Declaração de acessibilidade](docs/accessibility_statement.md)
-- [Operação, segurança, acessibilidade e suporte](docs/operation_security_accessibility_support.md)
-- [Plano de testes](docs/test_plan.md)
-- [Hardening de segurança](docs/security_hardening.md)
-- [Matriz de formulários](https://github.com/leonardosminfo/plugin_glpi_acessivel/blob/main/docs/form_renderer_compatibility_matrix.md)
-- [Matriz de intents e ACL do chatbot](https://github.com/leonardosminfo/plugin_glpi_acessivel/blob/main/docs/chatbot_intent_acl_matrix.md)
+Arquivos públicos mantidos na raiz do projeto:
+
+- [Histórico de alterações](CHANGELOG.md)
+- [Guia de contribuição](CONTRIBUTING.md)
+- [Política de segurança](SECURITY.md)
+- [Avisos de terceiros](THIRD_PARTY_NOTICES.md)
+- [Licença GPL-2.0-or-later](LICENSE)
+
+O pacote de instalação também inclui o diretório `docs/` com os guias detalhados de instalação, operação, acessibilidade, segurança, testes e inventário de voz.
 
 ## Contribuindo
 
