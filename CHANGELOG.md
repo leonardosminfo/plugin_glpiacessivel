@@ -20,20 +20,20 @@
 
 ## 0.1.111-beta
 
-- permite definir o nome publico do chatbot nas configuracoes gerais, mantendo TiAjuda como padrao;
+- permite definir o nome publico do chatbot nas configuracoes gerais, mantendo Assistente como padrao;
 - propaga o nome para interface, respostas, voz, ARIA e curadoria de roteiros com escape contextual;
 - normaliza HTML, controles, marcadores bidirecionais, espacos e comprimento antes de persistir;
 - corrige os rotulos ARIA da leitura automatica e internacionaliza as frases com placeholders;
 - adiciona migracao idempotente, auditoria sem registrar o nome e testes unitarios de seguranca e fallback.
 ## 0.1.110-beta
 
-- corrige o fundo preto herdado pelos textos dentro da resposta amarela da TiAjuda no alto contraste;
+- corrige o fundo preto herdado pelos textos dentro da resposta amarela da Assistente no alto contraste;
 - torna transparentes os fundos internos da bolha, preservando texto preto sobre amarelo e o selo independente;
 - valida a cascata completa nos modos normal e alto contraste.
 
 ## 0.1.109-beta
 
-- corrige o contraste das respostas da TiAjuda no tema normal e noturno;
+- corrige o contraste das respostas da Assistente no tema normal e noturno;
 - substitui o gradiente por fundo solido `#005a9c` com texto branco, atingindo aproximadamente 7,14:1;
 - isola a regra de cor da bolha para impedir sobrescrita pelas regras globais, preservando o selo e o alto contraste.
 

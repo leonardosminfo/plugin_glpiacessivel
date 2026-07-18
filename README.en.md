@@ -11,7 +11,7 @@
   [![GLPI 10 and 11](https://img.shields.io/badge/GLPI-10%20%7C%2011-0b5cad)](https://glpi-project.org/)
   [![PHP 8.1+](https://img.shields.io/badge/PHP-%3E%3D%208.1-777bb4)](https://www.php.net/)
   [![GPL-2.0-or-later](https://img.shields.io/badge/license-GPL--2.0--or--later-2f855a)](LICENSE)
-  ![Automated tests: 100](https://img.shields.io/badge/tests-100%20passing-2f855a)
+  ![Automated tests: 100](https://img.shields.io/badge/tests-101%20passing-2f855a)
 </div>
 
 > [!IMPORTANT]
@@ -24,6 +24,66 @@ GLPI Accessible provides a more direct and assistive service desk experience wit
 It **does not grant additional rights**. Queries and changes remain subject to GLPI core ACLs, business rules, and validations.
 
 The project targets environments where the standard portal still creates barriers for screen reader users, magnification users, high-contrast users, or people who navigate exclusively with a keyboard.
+
+## See it in action
+
+The screens below use fictitious validation data and show workflows that remain subject to the active GLPI profile, entity, and ACLs. They illustrate the product experience, but are not, by themselves, evidence of WCAG or eMAG conformance.
+
+### 1. Start from the accessible service desk
+
+The entry page brings together the modules enabled by the administrator and keeps the GLPI context, entity, and profile visible.
+
+<p align="center">
+  <img src="assets/images/readme/01-portal-acessivel.png" width="1100" alt="Accessible portal home page with module navigation, active context, and shortcuts to the main workflows">
+</p>
+
+### 2. Submit a request with clear guidance
+
+The assisted ticket flow arranges fields in a predictable sequence without replacing GLPI templates, validations, or permissions.
+
+<p align="center">
+  <img src="assets/images/readme/02-abertura-assistida.png" width="1100" alt="Assisted ticket creation page with organized fields, guidance, and access to the Service Catalog">
+</p>
+
+### 3. Track tickets allowed by your profile
+
+The ticket list exposes filters and results authorized by GLPI, leading to the details, history, and ITIL actions available for each item.
+
+<p align="center">
+  <img src="assets/images/readme/03-chamados.png" width="1100" alt="Ticket search page with accessible filters and results restricted by the current user permissions">
+</p>
+
+### 4. Search for guidance before opening a ticket
+
+The knowledge base supports subject search and access to articles visible in the active entity and profile.
+
+<p align="center">
+  <img src="assets/images/readme/04-base-conhecimento.png" width="1100" alt="Knowledge base page with a search field, categories, and an accessible article reading area">
+</p>
+
+### 5. Reuse forms already registered in GLPI
+
+The catalog displays forms available from GLPI 11 Service Catalog or GLPI 10 Formcreator while preserving the native engine whenever required.
+
+<p align="center">
+  <img src="assets/images/readme/05-formularios.png" width="1100" alt="Accessible forms catalog with options to report a problem and request a service">
+</p>
+
+### 6. Ask the Assistant in the same operational context
+
+The Assistant uses the current profile, entity, and permissions. Write actions remain protected by ACL, CSRF, and structured confirmation.
+
+<p align="center">
+  <img src="assets/images/readme/06-assistente.png" width="1100" alt="Assistant page with GLPI context, introductory message, and suggested operational questions">
+</p>
+
+### 7. Roll out capabilities gradually
+
+Administrators can customize the Assistant name, visible modules, and integrations without treating presentation settings as authorization.
+
+<p align="center">
+  <img src="assets/images/readme/07-configuracoes.png" width="1100" alt="Plugin administration page with the public Assistant name and feature availability settings">
+</p>
 
 ## User journey
 
@@ -161,7 +221,7 @@ Internal environments may validate local assets or external URLs according to th
 
 The `0.2-beta` baseline includes:
 
-- PHPUnit: **100 tests and 447 assertions**;
+- PHPUnit: **101 tests and 448 assertions**;
 - PHPStan: **no errors**;
 - PHPCS: **no errors** in the release gate;
 - gettext catalogs rebuilt and validated with `msgfmt`;
@@ -206,6 +266,8 @@ Maintainers can build and verify the public package with:
 
 Public files maintained at the project root:
 
+- [Authorship and ownership](AUTHORS.md)
+- [Citation metadata](CITATION.cff)
 - [Changelog](CHANGELOG.md)
 - [Contributing guide](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
@@ -214,6 +276,13 @@ Public files maintained at the project root:
 
 The installation package also contains a `docs/` directory with detailed installation, operation, accessibility, security, testing, and voice inventory guides.
 
+## Authorship and ownership
+
+The original project was conceived, developed, and is maintained by **Leonardo da Silva Moreira**, author and owner of the original code.
+
+The software is distributed under GPL-2.0-or-later. Third parties may create customizations and redistributions under the license without removing authorship of the original project. This is an independent community project and is not an official product sponsored or certified by the GLPI Project or Teclib.
+
+See [authorship and ownership](AUTHORS.md) and the [citation metadata](CITATION.cff).
 ## Contributing
 
 Accessibility barrier reports are especially valuable. When opening an issue:

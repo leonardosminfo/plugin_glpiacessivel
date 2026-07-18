@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "GLPI Accessible"
+type: software
+authors:
+  - family-names: "Moreira"
+    given-names: "Leonardo da Silva"
+version: "0.2-beta"
+date-released: "2026-07-18"
+url: "https://github.com/leonardosminfo/plugin_glpi_acessivel"
+repository-code: "https://github.com/leonardosminfo/plugin_glpi_acessivel"
+license: "GPL-2.0-or-later"
+abstract: "An accessible service desk journey integrated with GLPI 10 and 11."
+keywords:
+  - accessibility
+  - GLPI
+  - service desk
+  - WCAG
+  - eMAG

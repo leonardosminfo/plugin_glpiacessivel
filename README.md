@@ -11,7 +11,7 @@
   [![GLPI 10 e 11](https://img.shields.io/badge/GLPI-10%20%7C%2011-0b5cad)](https://glpi-project.org/)
   [![PHP 8.1+](https://img.shields.io/badge/PHP-%3E%3D%208.1-777bb4)](https://www.php.net/)
   [![Licença GPL-2.0-or-later](https://img.shields.io/badge/licen%C3%A7a-GPL--2.0--or--later-2f855a)](LICENSE)
-  ![Testes automatizados: 100](https://img.shields.io/badge/testes-100%20aprovados-2f855a)
+  ![Testes automatizados: 100](https://img.shields.io/badge/testes-101%20aprovados-2f855a)
 </div>
 
 > [!IMPORTANT]
@@ -24,6 +24,66 @@ O GLPI Acessível oferece uma experiência de central de serviços mais direta e
 Ele **não concede direitos adicionais**. Consultas e alterações continuam submetidas às ACLs, regras de negócio e validações do core do GLPI.
 
 O projeto foi pensado para ambientes em que o portal padrão ainda apresenta barreiras para usuários de leitores de tela, ampliação, alto contraste ou navegação exclusivamente por teclado.
+
+## O sistema em funcionamento
+
+As telas abaixo usam dados fictícios de homologação e ilustram fluxos sujeitos ao perfil, à entidade e às ACLs do GLPI. Elas apresentam a experiência do produto, mas não constituem, isoladamente, evidência de conformidade com WCAG ou eMAG.
+
+### 1. Comece pela central de serviços acessível
+
+A entrada reúne os módulos liberados pelo administrador e mantém visíveis o contexto, a entidade e o perfil usados pelo GLPI.
+
+<p align="center">
+  <img src="assets/images/readme/01-portal-acessivel.png" width="1100" alt="Tela inicial do portal acessível com navegação por módulos, contexto ativo e atalhos para os principais fluxos">
+</p>
+
+### 2. Registre uma solicitação com orientação clara
+
+A abertura assistida organiza os campos do chamado em uma sequência previsível, sem substituir templates, validações ou permissões do GLPI.
+
+<p align="center">
+  <img src="assets/images/readme/02-abertura-assistida.png" width="1100" alt="Tela de abertura assistida de chamado com campos organizados, instruções e acesso ao Catálogo de Serviços">
+</p>
+
+### 3. Acompanhe os chamados permitidos pelo seu perfil
+
+A listagem apresenta filtros e resultados autorizados pelo GLPI, permitindo chegar ao detalhe, histórico e ações ITIL disponíveis para o item.
+
+<p align="center">
+  <img src="assets/images/readme/03-chamados.png" width="1100" alt="Tela de consulta de chamados com filtros acessíveis e resultados limitados pelas permissões do usuário">
+</p>
+
+### 4. Pesquise orientações antes de abrir um chamado
+
+A base de conhecimento oferece pesquisa por assunto e consulta dos artigos visíveis na entidade e no perfil ativos.
+
+<p align="center">
+  <img src="assets/images/readme/04-base-conhecimento.png" width="1100" alt="Tela da base de conhecimento com campo de pesquisa, categorias e área de leitura acessível">
+</p>
+
+### 5. Use formulários já cadastrados no GLPI
+
+O catálogo apresenta formulários disponíveis no Service Catalog do GLPI 11 ou no Formcreator do GLPI 10, preservando o motor nativo quando necessário.
+
+<p align="center">
+  <img src="assets/images/readme/05-formularios.png" width="1100" alt="Catálogo acessível de formulários com opções para reportar um problema e solicitar um serviço">
+</p>
+
+### 6. Consulte o Assistente no mesmo contexto operacional
+
+O Assistente usa o perfil, a entidade e as permissões atuais. Ações de escrita continuam protegidas por ACL, CSRF e confirmação estruturada.
+
+<p align="center">
+  <img src="assets/images/readme/06-assistente.png" width="1100" alt="Tela do Assistente com contexto GLPI, mensagem inicial e sugestões de perguntas operacionais">
+</p>
+
+### 7. Libere recursos de forma gradual
+
+A administração permite personalizar o nome do Assistente, os módulos apresentados e as integrações, sem transformar configuração visual em autorização.
+
+<p align="center">
+  <img src="assets/images/readme/07-configuracoes.png" width="1100" alt="Configuração administrativa do plugin com o nome público do Assistente e opções de disponibilidade dos recursos">
+</p>
 
 ## Visão da jornada
 
@@ -163,7 +223,7 @@ Em ambientes internos, os administradores podem homologar assets locais ou URLs 
 
 A linha de base da `0.2-beta` inclui:
 
-- PHPUnit: **100 testes e 447 asserções**;
+- PHPUnit: **101 testes e 448 asserções**;
 - PHPStan: **sem erros**;
 - PHPCS: **sem erros** no gate de release;
 - catálogos gettext recompilados e validados com `msgfmt`;
@@ -208,6 +268,8 @@ Para mantenedores, o pacote público é gerado com:
 
 Arquivos públicos mantidos na raiz do projeto:
 
+- [Autoria e titularidade](AUTHORS.md)
+- [Metadados de citação](CITATION.cff)
 - [Histórico de alterações](CHANGELOG.md)
 - [Guia de contribuição](CONTRIBUTING.md)
 - [Política de segurança](SECURITY.md)
@@ -216,6 +278,13 @@ Arquivos públicos mantidos na raiz do projeto:
 
 O pacote de instalação também inclui o diretório `docs/` com os guias detalhados de instalação, operação, acessibilidade, segurança, testes e inventário de voz.
 
+## Autoria e titularidade
+
+O projeto original foi idealizado, desenvolvido e é mantido por **Leonardo da Silva Moreira**, autor e titular do código original.
+
+O software é distribuído sob GPL-2.0-or-later. Terceiros podem criar customizações e redistribuições conforme a licença, sem remover a autoria do projeto original. Este é um projeto independente da comunidade e não é um produto oficial, patrocinado ou certificado pelo GLPI Project ou pela Teclib.
+
+Consulte [autoria e titularidade](AUTHORS.md) e os [metadados de citação](CITATION.cff).
 ## Contribuindo
 
 Relatos de barreiras de acessibilidade são especialmente importantes. Ao abrir uma issue:

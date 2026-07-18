@@ -3,9 +3,9 @@
     "tag":  "v0.2-beta",
     "profile":  "marketplace",
     "package":  "glpiacessivel.zip",
-    "sha256":  "94c78e05804e02741649446de103366022818b95c56b56856ddea715468d9b7f",
-    "bytes":  1616372,
-    "generated_at":  "2026-07-18T18:41:40.4955715Z",
+    "sha256":  "6f38e04730fa1ef62f5d0a1f93fea45f95d21f3d4b4ffd1afb25a0beb927f7f5",
+    "bytes":  2601139,
+    "generated_at":  "2026-07-18T19:20:51.7831646Z",
     "compatibility":  {
                           "glpi":  "\u003e=10.0 \u003c12.0",
                           "php":  "\u003e=8.1"
