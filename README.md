@@ -270,6 +270,9 @@ Arquivos públicos mantidos na raiz do projeto:
 
 - [Autoria e titularidade](AUTHORS.md)
 - [Metadados de citação](CITATION.cff)
+- [Developer Certificate of Origin](DCO.md)
+- [Politica de licenciamento](LICENSE_POLICY.md)
+- [Checklist de propriedade intelectual](docs/intellectual_property_checklist.md)
 - [Histórico de alterações](CHANGELOG.md)
 - [Guia de contribuição](CONTRIBUTING.md)
 - [Política de segurança](SECURITY.md)
@@ -302,6 +305,11 @@ Pull requests devem preservar compatibilidade com GLPI 10 e 11, ACL no servidor,
 Distribuído sob a licença [GPL-2.0-or-later](LICENSE). Dependências e avisos de terceiros estão em [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ---
+
+A politica de licenciamento esta detalhada em
+[LICENSE_POLICY.md](LICENSE_POLICY.md). GLPI e uma marca de seu respectivo
+titular e e mencionada apenas para indicar compatibilidade; este projeto nao
+possui afiliacao, patrocinio ou certificacao do GLPI Project ou da Teclib.
 
 <div align="center">
   Projeto em desenvolvimento aberto para tornar a central de serviços mais utilizável por todas as pessoas.

@@ -268,6 +268,9 @@ Public files maintained at the project root:
 
 - [Authorship and ownership](AUTHORS.md)
 - [Citation metadata](CITATION.cff)
+- [Developer Certificate of Origin](DCO.md)
+- [Licensing policy](LICENSE_POLICY.md)
+- [Intellectual property checklist](docs/intellectual_property_checklist.md)
 - [Changelog](CHANGELOG.md)
 - [Contributing guide](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
@@ -300,6 +303,11 @@ Pull requests must preserve GLPI 10/11 compatibility, server-side ACL checks, in
 Distributed under [GPL-2.0-or-later](LICENSE). Third-party dependencies and notices are listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ---
+
+The licensing policy is detailed in
+[LICENSE_POLICY.md](LICENSE_POLICY.md). GLPI is a trademark of its respective
+owner and is mentioned solely to identify compatibility; this project is not
+affiliated with, sponsored by, or certified by the GLPI Project or Teclib.
 
 <div align="center">
   An open project working to make service desk workflows more usable for everyone.

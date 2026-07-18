@@ -25,3 +25,24 @@ Changes to UI or workflows must also cover keyboard operation, visible focus, re
 Never commit credentials, authenticated browser sessions, production URLs, personal data, generated release folders, dependency directories or local audit reports.
 
 Keep changes scoped, document compatibility assumptions and add regression tests for security- or permission-sensitive behavior.
+
+
+## Developer Certificate of Origin
+
+Contributions are accepted under the same `GPL-2.0-or-later` license used by
+the project. By contributing, you certify that you have the right to submit
+the work under that license and agree to the Developer Certificate of Origin
+1.1 in [DCO.md](DCO.md).
+
+Every commit in a pull request must include a sign-off created with
+`git commit --signoff`. The resulting commit message must contain a
+`Signed-off-by: Name <email>` line matching the contributor. The sign-off
+records provenance; it does not transfer copyright ownership to the maintainer.
+
+Do not submit employer-owned, client-confidential, copied or AI-generated
+material unless you have verified that it may lawfully be distributed under
+the project license. Clearly identify third-party material and its license.
+
+New original source files should include
+`SPDX-License-Identifier: GPL-2.0-or-later` in the appropriate comment
+syntax.

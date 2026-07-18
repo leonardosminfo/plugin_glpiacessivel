@@ -6,6 +6,10 @@
 - adiciona politica de seguranca, guia de contribuicao, avisos de terceiros e licenca GPL integral;
 - endurece a higiene do repositorio e a verificacao automatica do pacote;
 - amplia o CI para PHPUnit, PHPStan, PHPCS, Composer Audit e validacao de i18n;
+- documenta axe-core 4.10.3, MPL-2.0, fonte correspondente, hash e avisos transitivos;
+- adota DCO 1.1 e sign-off para a procedencia de contribuicoes;
+- explicita politica de licenciamento, marcas e checklist de propriedade intelectual;
+- faz o gate de release validar documentos juridicos e o hash do axe-core.
 - publica o pacote principal no perfil enxuto, sem binarios de voz com redistribuicao pendente;
 - documenta explicitamente limites de homologacao assistiva, formularios dinamicos e traducao en-GB.
 ## 0.1.112-beta
