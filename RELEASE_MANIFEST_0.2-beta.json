@@ -1,0 +1,13 @@
+﻿{
+    "version":  "0.2-beta",
+    "tag":  "v0.2-beta",
+    "profile":  "marketplace",
+    "package":  "glpiacessivel.zip",
+    "sha256":  "9a87253ca3abd0b16e65c6851cc5986880ac2360313689717166572670251dfd",
+    "bytes":  1610472,
+    "generated_at":  "2026-07-18T17:59:40.9166390Z",
+    "compatibility":  {
+                          "glpi":  "\u003e=10.0 \u003c12.0",
+                          "php":  "\u003e=8.1"
+                      }
+}
